@@ -1,18 +1,42 @@
 .clients-section__title {
-  padding-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 30px;
 
   color: $title-text-color;
+
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $decstop) {
+    margin-bottom: 50px;
+  }
 }
 .brands {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
-.brands__item:not(:first-child) {
-  margin-left: 30px;
+.brands__item {
+  @media screen and (max-width: 767px) {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+    width: calc((100% - 3 * 30px) / 3);
+  }
+
+  @media screen and (min-width: $decstop) {
+    width: calc((100% - 6 * 30px) / 6);
+    margin: 15px;
+  }
 }
+
 .brands__link {
   display: flex;
   justify-content: center;
@@ -20,21 +44,22 @@
   border: 1px solid #afb1b8;
   color: #afb1b8;
   border-radius: 4px;
-  width: 170px;
   height: 90px;
   transition: color $timing-fm, border $timing-fm;
 
-&:focus {
-  outline: none;
-  box-shadow: 0 0 0 1px $accent-color;
-  border-radius: 4px;
-  color: $accent-color;
-}
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $accent-color;
+    border-radius: 4px;
+    color: $accent-color;
+  }
 
-&:hover {
-  border: 1px solid $accent-color;
-  color: $accent-color;
+  &:hover {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
 }
+.brands__icon {
 }
 .brands__svg {
   fill: currentColor;

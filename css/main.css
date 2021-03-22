@@ -1325,17 +1325,24 @@ li {
 }
 
 .team__title {
+  outline: 2px solid red;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: #212121;
 }
 
 @media screen and (min-width: 1200px) {
   .team__title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1474,22 +1481,48 @@ li {
 }
 
 .clients-section__title {
-  padding-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 30px;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-section__title {
+    margin-bottom: 50px;
+  }
 }
 
 .brands {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
 }
 
-.brands__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .brands__item {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .brands__item {
+    margin: 15px;
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .brands__item {
+    width: calc((100% - 6 * 30px) / 6);
+    margin: 15px;
+  }
 }
 
 .brands__link {
@@ -1505,7 +1538,6 @@ li {
   border: 1px solid #afb1b8;
   color: #afb1b8;
   border-radius: 4px;
-  width: 170px;
   height: 90px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
