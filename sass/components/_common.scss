@@ -22,13 +22,29 @@
 //   padding-right: 15px;
 //   margin: 0 auto;
 // }
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// &--no-padding {
-//   padding-bottom: 0px;
-//  }
-// }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    &--display {
+      display: none;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    &--display {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $decstop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &--no-padding {
+      padding-bottom: 0px;
+    }
+  }
+}
 
 .line {
   max-width: 100%;

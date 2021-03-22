@@ -386,6 +386,33 @@ li {
   }
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .section--display {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section--display {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section--no-padding {
+    padding-bottom: 0px;
+  }
+}
+
 .line {
   max-width: 100%;
   border-bottom: 1px solid #ececec;
