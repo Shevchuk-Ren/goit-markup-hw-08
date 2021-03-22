@@ -1,0 +1,30 @@
+/*BLOCK Features преимуществ*/
+.features {
+  display: flex;
+}
+.features__item {
+  min-width: 207px;
+
+&:not(:first-child) {
+  margin-left: 30px;
+}
+}
+.features__thumb {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.features__title {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+.features__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}

@@ -1,0 +1,28 @@
+.logo {
+  display: block;
+  text-decoration: none;
+  margin-right: 93px;
+  color: $nav-text-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+
+&:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px $accent-color;
+  border-radius: 4px;
+}
+}
+.logo {
+&--indent {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+&--black {
+  color: $primery-white-color;
+}
+}
+.logo__slice {
+  color: $accent-color;
+}
