@@ -46,6 +46,7 @@
     color: $accent-color;
   }
 }
+
 .contact-list__icon {
   fill: currentColor;
   @media screen and (min-width: $tablet) {
@@ -53,5 +54,35 @@
   }
   @media screen and (min-width: $decstop) {
     margin-right: 10px;
+  }
+}
+
+.envelope {
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 14px;
+    height: 10px;
+  }
+
+  @media screen and (min-width: $decstop) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.mobile {
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 10px;
+    height: 14px;
+  }
+
+  @media screen and (min-width: $decstop) {
+    width: 10px;
+    height: 16px;
   }
 }
