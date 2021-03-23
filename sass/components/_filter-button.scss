@@ -1,7 +1,18 @@
 /*BLOCK фильтр по кнопкам*/
 
 .filterbox {
-  padding-bottom: 20px;
+  outline: 2px solid red;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $decstop) {
+    margin-bottom: 50px;
+  }
 }
 .filter {
   display: flex;
@@ -17,25 +28,18 @@
   @media screen and (min-width: $decstop) {
   }
 }
+
 .filter__item:not(:last-child) {
   margin-right: 8px;
+}
 
+.filter__item {
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: $decstop) {
-  }
-}
-.filter__item {
-  @media screen and (max-width: 767px) {
-  }
-
-  @media screen and (min-width: $tablet) {
+    margin: 0;
   }
 
   @media screen and (min-width: $decstop) {
