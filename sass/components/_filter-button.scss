@@ -5,8 +5,39 @@
 }
 .filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $decstop) {
+  }
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $decstop) {
+  }
+}
+.filter__item {
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $decstop) {
+  }
 }

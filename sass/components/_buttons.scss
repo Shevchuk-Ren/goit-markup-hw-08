@@ -37,6 +37,14 @@
   color: $title-text-color;
   transition: color $timing-fm, background-color $timing-fm,
     box-shadow $timing-fm;
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $decstop) {
+  }
   &:focus {
     outline: none;
     box-shadow: 0 0 0 1px $accent-color;
