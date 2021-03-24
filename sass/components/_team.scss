@@ -64,13 +64,23 @@
 }
 .team__thumb {
   overflow: hidden;
-  height: 294px;
+
   border-radius: 4px;
+  @media screen and (max-width: 767px) {
+    max-height: 460px;
+  }
+  @media screen and (min-width: $tablet) {
+    max-height: 374px;
+  }
+
+  @media screen and (min-width: $decstop) {
+    max-height: 260px;
+  }
 }
 
 .team__img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   @media screen and (max-width: 767px) {
   }
@@ -78,7 +88,6 @@
   }
 
   @media screen and (min-width: $decstop) {
-    width: 270px;
   }
 }
 .team__content {
