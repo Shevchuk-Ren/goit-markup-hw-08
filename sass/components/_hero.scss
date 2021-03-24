@@ -13,14 +13,14 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mobile.jpg);
+    url(./../images/mobile.jpg);
   @media (min-resolution: 2dpps) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mobile@2x.jpg);
+      url(./../images/mobile@2x.jpg);
   }
 
   @media screen and (min-width: 481px) {
@@ -54,7 +54,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/desctop@2x.jpg);
+        url(./../images/desctop@2x.jpg);
     }
   }
   background-size: cover;
