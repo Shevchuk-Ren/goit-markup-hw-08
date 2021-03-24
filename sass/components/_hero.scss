@@ -29,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet.jpg);
+      url(./../images/tablet.jpg);
 
     @media (min-resolution: 2dpps) {
       background-image: linear-gradient(
@@ -37,7 +37,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tablet@2x.jpg);
+        url(./../images/tablet@2x.jpg);
     }
   }
   @media screen and (min-width: 769px) {
@@ -46,7 +46,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/desktop.jpg);
+      url(./../images/desktop.jpg);
 
     @media (min-resolution: 2dpps) {
       background-image: linear-gradient(
