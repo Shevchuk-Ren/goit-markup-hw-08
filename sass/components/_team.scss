@@ -62,13 +62,19 @@
 
   background: #ffffff;
 }
+.team__thumb {
+  overflow: hidden;
+  height: 294px;
+  border-radius: 4px;
+}
 
 .team__img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
   @media screen and (max-width: 767px) {
-    width: 100%;
   }
   @media screen and (min-width: $tablet) {
-    width: 100%;
   }
 
   @media screen and (min-width: $decstop) {

@@ -1184,22 +1184,22 @@ li {
 
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/tablet.jpg);
   }
 }
 
 @media screen and (min-width: 481px) and (min-resolution: 2dpps) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/tablet@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/desktop.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/desktop.jpg);
   }
 }
 
@@ -1211,18 +1211,56 @@ li {
 }
 
 .hero__container {
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__container {
+    max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 696px;
+  }
 }
 
 .hero__title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+  }
 }
 
 /*BLOCK Features преимуществ*/
@@ -1345,6 +1383,16 @@ li {
 
 .options__thumb {
   position: relative;
+  overflow: hidden;
+  height: 294px;
+  border-radius: 4px;
+}
+
+.options__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .options__name {
@@ -1435,16 +1483,17 @@ li {
   background: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  .team__img {
-    width: 100%;
-  }
+.team__thumb {
+  overflow: hidden;
+  height: 294px;
+  border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
-  .team__img {
-    width: 100%;
-  }
+.team__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1737,6 +1786,14 @@ li {
 .member-card__thumb {
   position: relative;
   overflow: hidden;
+  border-radius: 4px;
+}
+
+.member-card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .overlay {

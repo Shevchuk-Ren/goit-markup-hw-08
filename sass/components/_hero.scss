@@ -61,15 +61,41 @@
   background-position: center;
 }
 .hero__container {
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: $decstop) {
+    max-width: 696px;
+  }
 }
 .hero__title {
   color: $primery-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
+
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width: $decstop) {
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+  }
 }

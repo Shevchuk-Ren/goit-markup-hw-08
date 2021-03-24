@@ -31,8 +31,15 @@
 }
 .options__thumb {
   position: relative;
+  overflow: hidden;
+  height: 294px;
+  border-radius: 4px;
 }
-
+.options__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .options__name {
   display: block;
   position: absolute;
