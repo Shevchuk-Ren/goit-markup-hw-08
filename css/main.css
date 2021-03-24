@@ -1169,10 +1169,45 @@ li {
   max-width: 1600px;
   min-height: 600px;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/owerlay.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/owerlay.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media (min-resolution: 2dpps) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-resolution: 2dpps) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) and (min-resolution: 2dpps) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/desctop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desctop@2x.jpg);
+  }
 }
 
 .hero__container {
@@ -1648,11 +1683,14 @@ li {
 
 @media screen and (min-width: 768px) {
   .member {
-    margin-left: -30px;
-    margin-top: -30px;
+    margin: -15px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.member > .member-card__item {
+  border: 1px solid #eeeeee;
 }
 
 @media screen and (max-width: 767px) {
@@ -1667,6 +1705,7 @@ li {
         flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1677,10 +1716,6 @@ li {
     margin-left: 30px;
     margin-top: 30px;
   }
-}
-
-.member-card__item {
-  display: block;
 }
 
 .member-card__item:hover .overlay {
@@ -1750,9 +1785,6 @@ li {
 
 .card-content {
   padding: 20px 24px;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
 }
 
 /*footer*/
