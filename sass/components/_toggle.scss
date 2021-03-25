@@ -16,7 +16,6 @@
   background-color: transparent;
   outline: none;
   fill: currentColor;
-  
 
   &:hover {
     fill: $accent-color;
@@ -28,10 +27,11 @@
     display: none;
   }
 }
-.menu-toggle:hover, .menu-toggle:focus {
-    color: #188ce8;
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -83,6 +83,7 @@
   }
 }
 .contact-menu {
+  margin-top: 32px;
   margin-bottom: 62px;
 }
 
@@ -95,7 +96,7 @@
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
-
+  color: $accent-color;
   letter-spacing: 0.02em;
 }
 .contact-menu__tel {
@@ -115,5 +116,31 @@
 .mobile-social__link {
   color: $accent-color;
 }
+.mobile-social__item {
+  margin-right: 20px;
+  position: relative;
+}
+.mobile-social__item:not(:first-child):before {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  content: '';
+  display: block;
+  height: 22px;
+  width: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
 
+// &--current::before {
+//   display: inline-block;
+//   position: absolute;
+//   content: '';
+//   height: 4px;
+//   width: 100%;
 
+//   bottom: -1px;
+//   left: 0;
+
+//   background-color: $accent-color;
+//   border-radius: 2px;
+// }
