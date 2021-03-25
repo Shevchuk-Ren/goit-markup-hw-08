@@ -1,0 +1,119 @@
+// обнуляем стили для кнопки
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  fill: currentColor;
+  
+
+  &:hover {
+    fill: $accent-color;
+  }
+  &:focus {
+    fill: $accent-color;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+.menu-toggle:hover, .menu-toggle:focus {
+    color: #188ce8;
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 48px;
+
+  background-color: #ffffff;
+  transform: translateX(0);
+  transition: transform $timing-fm;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+.menu-container.is-open {
+  transform: translateX(100%);
+}
+.mobile-menu {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+.mobile-menu__item {
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+}
+.mobile-menu__link {
+  display: block;
+
+  color: $title-text-color;
+  transition: color $timing-fm;
+
+  &--current {
+    position: relative;
+    color: $accent-color;
+  }
+
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $accent-color;
+    border-radius: 4px;
+    color: $accent-color;
+  }
+}
+.contact-menu {
+  margin-bottom: 62px;
+}
+
+.contact-menu__item {
+  &:not(:first-child) {
+    margin-top: 32px;
+  }
+}
+.contact-menu__mail {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+
+  letter-spacing: 0.02em;
+}
+.contact-menu__tel {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.mobile-social {
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 0.02em;
+}
+.mobile-social__link {
+  color: $accent-color;
+}
+
+

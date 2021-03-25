@@ -1930,10 +1930,6 @@ li {
   }
 }
 
-.footer__one-section {
-  outline: 1px solid red;
-}
-
 @media screen and (max-width: 767px) {
   .footer__one-section {
     margin-bottom: 60px;
@@ -1951,10 +1947,6 @@ li {
     margin: 0;
     padding: 60px 0;
   }
-}
-
-.footer__two-section {
-  outline: 1px solid red;
 }
 
 @media screen and (max-width: 767px) {
@@ -2049,10 +2041,6 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   fill: #ffffff;
-}
-
-.footer__three-section {
-  outline: 1px solid red;
 }
 
 @media screen and (max-width: 767px) {
