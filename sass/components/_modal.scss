@@ -8,6 +8,7 @@
   opacity: 1;
   visibility: visible;
   transition: opacity $timing-fm, visibility $timing-fm;
+  z-index: 9999;
 }
 .is-hidden {
   visibility: hidden;
