@@ -1445,13 +1445,21 @@ li {
 }
 
 .team__title {
-  outline: 2px solid red;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 30px;
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .team__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.178;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1595,10 +1603,6 @@ li {
 }
 
 /*BLOCK фильтр по кнопкам*/
-.filterbox {
-  outline: 2px solid red;
-}
-
 @media screen and (max-width: 767px) {
   .filterbox {
     margin-bottom: 25px;
@@ -1659,6 +1663,15 @@ li {
   text-align: center;
   margin-bottom: 30px;
   color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .clients-section__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.178;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
