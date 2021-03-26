@@ -95,9 +95,17 @@
 .contact-menu__mail {
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.176;
   color: $accent-color;
-  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 32px;
+    line-height: 1.176;
+    letter-spacing: 0.01em;
+  }
+  @media screen and (min-width: 480px) {
+    letter-spacing: 0.02em;
+  }
 }
 .contact-menu__tel {
   font-weight: 500;
@@ -108,6 +116,7 @@
 }
 .mobile-social {
   display: inline-flex;
+  flex-wrap: wrap;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
@@ -130,17 +139,3 @@
   width: 1px;
   background-color: rgba(33, 33, 33, 0.2);
 }
-
-// &--current::before {
-//   display: inline-block;
-//   position: absolute;
-//   content: '';
-//   height: 4px;
-//   width: 100%;
-
-//   bottom: -1px;
-//   left: 0;
-
-//   background-color: $accent-color;
-//   border-radius: 2px;
-// }

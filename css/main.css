@@ -32,8 +32,6 @@ Use a more readable tab size (opinionated).
 2. Prevent adjustments of font size after orientation changes in iOS.
 */
 html {
-  line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
@@ -127,7 +125,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -1205,10 +1203,10 @@ li {
 /*hero*/
 .hero {
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/mobile.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/mobile.jpg);
@@ -1239,6 +1237,8 @@ li {
 
 @media screen and (min-width: 769px) {
   .hero {
+    min-height: 600px;
+    padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/desktop.jpg);
   }
@@ -1322,6 +1322,13 @@ li {
   }
 }
 
+.features__item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 @media screen and (min-width: 480px) {
   .features__item {
     width: 100%;
@@ -1391,12 +1398,15 @@ li {
   color: #212121;
 }
 
-@media screen and (min-width: 1200px) {
-  .features__text {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+@media screen and (max-width: 767px) {
+  .features__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
   }
 }
 
@@ -2314,9 +2324,22 @@ li {
 .contact-menu__mail {
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.176;
   color: #2196f3;
-  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .contact-menu__mail {
+    font-size: 32px;
+    line-height: 1.176;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contact-menu__mail {
+    letter-spacing: 0.02em;
+  }
 }
 
 .contact-menu__tel {
@@ -2331,6 +2354,8 @@ li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;

@@ -2,10 +2,10 @@
 
 .hero {
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
 
   background-color: $header-footer-fon;
   background-image: linear-gradient(
@@ -41,6 +41,8 @@
     }
   }
   @media screen and (min-width: 769px) {
+    min-height: 600px;
+    padding: 200px 0;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -86,13 +88,11 @@
     line-height: 1.615;
     letter-spacing: 0.06em;
   }
-
   @media screen and (min-width: $tablet) {
     font-size: 26px;
     line-height: 1.615;
     letter-spacing: 0.06em;
   }
-
   @media screen and (min-width: $decstop) {
     font-size: 44px;
     line-height: 1.4;
